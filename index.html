@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunProg</title>
+    <!-- Enlaza el archivo CSS externo "estilos.css" -->
+    <link rel="stylesheet" href="css/pass.css">
+    <link rel="stylesheet" href="css/alerts.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen">
+            <div class="screen__content">
+                <form class="login" name="formclave">
+                    <div class="login__field">
+                        <i class="login__icon fas fa-lock"></i>
+                        <input type="password" id="myInput" name="clave" class="login__input"
+                            placeholder="Ingrese clave">
+                        <input type="button" id="myBtn" class="button login__submit" onclick="acceso()"
+                            value="Ingresar">
+                    </div>
+
+                    <div class='content' id="alert-clave">
+                        <div class="alert alert-danger alert-white rounded">
+                            <div class="icon"><i class="fa fa-times-circle"></i></div>
+                            ¡Clave incorrecta!
+                        </div>
+                    </div>
+
+                </form>
+                
+                <div class="social-login">
+                    <h3>FunProg</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-login__icon fab fa-instagram"></a>
+                        <a href="#" class="social-login__icon fab fa-facebook"></a>
+                        <a href="#" class="social-login__icon fab fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="screen__background">
+                <span class="screen__background__shape screen__background__shape4"></span>
+                <span class="screen__background__shape screen__background__shape3"></span>
+                <span class="screen__background__shape screen__background__shape2"></span>
+                <span class="screen__background__shape screen__background__shape1"></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Credit -->
+    <script src="js/funcionescp.js"></script>
+    
+</body>
+
+</html>

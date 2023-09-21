@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunProg</title>
+    <!-- Enlaza el archivo CSS externo "estilos.css" -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/close.css">
+    <link rel="stylesheet" href="css/modals.css">
+</head>
+
+<body>
+    <script>
+        window.onload = checkUser;
+
+        function checkUser() {
+            if (!localStorage.getItem("clave")) {
+                window.location.href = "index.html";
+            }
+        };
+    </script>
+
+    <!-- Contenedor de la línea de tiempo -->
+    <div class="contentIcon tooltip">
+        <span class="tooltiptext">Salir</span>
+        <div id="icon" class="Icon closes tooltip" onclick="salir()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <h1>Clases Fundamentos de Programación</h1>
+    <h2>Esquema Clase Magistral y Clase Práctica</h2>
+    <ul>
+        <li style="--accent-color:#41516C">
+            <div class="date">Semana 1</div>
+            <div class="title">Algoritmos</div>
+            <div class="descr"><a href="#infosemana1">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#FBCA3E">
+            <div class="date">Semana 2</div>
+            <div class="title">Variable y Diagramas de Flujo</div>
+            <div class="descr"><a href="#infosemana2">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#E24A68">
+            <div class="date">Semana 3</div>
+            <div class="title">Operadores y condicionales DFD/PSeInt</div>
+            <div class="descr"><a href="#infosemana3">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#1B5F8C">
+            <div class="date">Semana 4</div>
+            <div class="title">Prueba de escritorio y repaso</div>
+            <div class="descr"><a href="#infosemana4">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#4CADAD">
+            <div class="date">Semana 5</div>
+            <div class="title">Introducción a Java</div>
+            <div class="descr"><a href="#infosemana5">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#41516C">
+            <div class="date">Semana 6</div>
+            <div class="title">Variables y Lectura de datos | Java</div>
+            <div class="descr"><a href="#infosemana6">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#FBCA3E">
+            <div class="date">Semana 7</div>
+            <div class="title">PARCIAL 1 - Teórico Y Práctico</div>
+            <div class="descr"><a href="#">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#E24A68">
+            <div class="date">Semana 8</div>
+            <div class="title">Tipos de Dato y Operadores | Java</div>
+            <div class="descr"><a href="#infosemana8">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#1B5F8C">
+            <div class="date">Semana 9</div>
+            <div class="title">Métodos | Java</div>
+            <div class="descr"><a href="#infosemana9">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#4CADAD">
+            <div class="date">Semana 10</div>
+            <div class="title">Condicionales (IF, IF-ELSE) | Java</div>
+            <div class="descr"><a href="#infosemana10">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#41516C">
+            <div class="date">Semana 11</div>
+            <div class="title">Condicionales (Switch-Case)</div>
+            <div class="descr"><a href="#infosemana11">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#FBCA3E">
+            <div class="date">Semana 12</div>
+            <div class="title">Parcial 2</div>
+            <div class="descr"><a href="#infosemana12">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#E24A68">
+            <div class="date">Semana 13</div>
+            <div class="title">Ciclos | Java</div>
+            <div class="descr"><a href="#infosemana13">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#1B5F8C">
+            <div class="date">Semana 14</div>
+            <div class="title">Arreglos Unidimensionales (vectores) | Java</div>
+            <div class="descr"><a href="#infosemana14">Ver infografía</a></div>
+        </li>
+        <li style="--accent-color:#4CADAD">
+            <div class="date">Semana 15</div>
+            <div class="title">Arreglos bidimensionales (matrices) | Java</div>
+            <div class="descr"><a href="#infosemana15">Ver infografía</a></div>
+        </li>
+    </ul>
+    <div class="credits"><a target="_blank"
+            href="https://www.freepik.com/free-vector/infographic-template-with-yearly-info_1252895.htm">inspired by</a>
+    </div>
+
+    <!--MODALS-->
+    <div id="infosemana1" class="modal">
+        <div class="modal__content">
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana1.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana2" class="modal">
+        <div class="modal__content">
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana2.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana3" class="modal">
+        <div class="modal__content">
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana3.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana4" class="modal">
+        <div class="modal__content">
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana4.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana5" class="modal">
+        <div class="modal__content">
+            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana5.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana6" class="modal">
+        <div class="modal__content">            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana6.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana7" class="modal">
+        <div class="modal__content">
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana7.png" alt="" width="100%">            
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana8" class="modal">
+        <div class="modal__content">            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana8.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana9" class="modal">
+        <div class="modal__content">            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana1.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana10" class="modal">
+        <div class="modal__content">
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana1.png" alt="" width="100%">
+            
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana11" class="modal">
+        <div class="modal__content">            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana1.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana12" class="modal">
+        <div class="modal__content">            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana1.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana13" class="modal">
+        <div class="modal__content">            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana1.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana14" class="modal">
+        <div class="modal__content">            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana1.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <div id="infosemana15" class="modal">
+        <div class="modal__content">            
+            <p>Ampliar: hacer clic derecho sobre la imagen y abrirla en una nueva pestaña.</p>
+            <img src="infos/infoSemana1.png" alt="" width="100%">
+            <a href="#" class="modal__close">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- End Credit -->
+    <script src="js/funcionclosecp.js"></script>
+
+</body>
+
+</html>
